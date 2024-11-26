@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="src/style.css/heder.css" />
+        <link href="src/style.css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="src/style.css/home.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <link rel="stylesheet" href="src/style.css/receita.css" type="text">
+            <link rel="stylesheet" href="src/style.css/arroz.css" type="text/css"/>
+        <title>Guia Morar sozinho</title>
+    </head>
+    
+    <body>
+        <header>
+            <nav id="navbar">
+                <i class="fa-solid fa-house" id="nav_logo"> Morar Sozinho</i>
+        
+                <ul id="nav_list">
+                    <li class="nav-item active">
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tutoriais">Tutoriais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+        
+                <button class="btn-default">
+                    Entrar
+                </button>
+        
+                <!-- Botão para menu mobile -->
+                <button id="mobile_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        
+            <!-- Menu mobile -->
+            <div id="mobile_menu">
+                <ul id="mobile_nav_list"> 
+                    <li class="nav-item">
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tutoriais">Tutoriais</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+        
+                <button class="btn-default">
+                    Entrar
+                </button>
+            </div> 
+        </header>
+        
+
+        
+                        </div>
+                        <section id="menu">
+                            <div class="dish">
+                                <img src="img/parmegiana-remove.jpg" class="dish-image" width="40%" alt="Imagem do Arroz">
+                                <h3 class="dish-title">Frango a parmegiana</h3>
+                                <span class="dish-description">Saboroso e barato.</span>
+                    
+                                <div class="dish-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(10+)</span>
+                                </div>
+                    
+                                <button class="btn-default" onclick="toggleRecipe()">
+                                    <i>Ver Mais</i>
+                                </button>
+                    
+                                <div id="recipe" style="display: none;">
+                                    <h4>Ingredientes:</h4>
+                                    <ul>
+                                        <li>1kg de filé de peito de frango</li>
+                                        <li>1 sachê de molho de tomate</li>
+                                        <li>1 xicara de farinha de trigo</li>
+                                        <li>1 xicara de farinha panko ou de rosca.</li>
+                                        <li>2 ovos </li>
+                                        <li>1 cebola média picada</li>
+                                        <li>2 dentes de alho picados</li>
+                                        <li>Óleo</li>
+                                        <li>Sal a gosto</li>
+                                        <li>Temperos de sua preferencia</li>
+                                        <li>1/2 Tomate picado</li>
+                                        <li>1/2 pimentão picado</li>
+                                        <li>250g de mussarela fatiada</li>
+                                    </ul>
+                    
+                                    <h4>Modo de Preparo:</h4>
+                                    <ol>
+                                        <li>Tempere os filés de peito de frango e reserve.</li>
+                                        <li>Em uma panela, coloque a cebola e o alho para dourar em 1 fio de óleo.</li>
+                                        <li>Quando a cebola e o alho dourar, coloque o tomate, o pimentão e os temperos de sua preferencia.</li>
+                                        <li>Logo após o passo anterior, coloque o molho de tomate, deixe cozinhando por 5 minutos, desligue e reserve.</li>
+                                        <li>Quebre os 2 ovos em um prato, coloque sal e temperos a gosto, misture bem.</li>
+                                        <li>Pegue o frango temperado e passe ele na farinha de trigo, depois nos ovos, e por ultimo, na farinha panko ou farinha de rosca.</li>
+                                        <li>Coloque bastante olho em uma panela alta.</li>
+                                        <li>Quanto o oleo estiver em uma temperatura media, coloque os frangos para fritar.</li>
+                                        <li>Quando os frangos estiverem dourados e fritos, reserve.</li>
+                                        <li>Em uma travessa, coloque uma camada de molho, os frangos enfileirados, outra camada de molho, e o queijo por cima.</li>
+                                        <li>Coloque a travessa no forno até o queijo derreter.</Li>
+                                        <li>Sirva-se</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </section>
+                    
+                        <script>
+                            function toggleRecipe() {
+                                const recipe = document.getElementById('recipe');
+                                if (recipe.style.display === "none") {
+                                    recipe.style.display = "block";
+                                } else {
+                                    recipe.style.display = "none";
+                                }
+                            }
+                        </script>
+                    </body>
+                    </html>

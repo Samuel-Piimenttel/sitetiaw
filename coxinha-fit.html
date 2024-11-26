@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="src/style.css/heder.css" />
+        <link href="src/style.css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="src/style.css/home.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <link rel="stylesheet" href="src/style.css/receita.css" type="text">
+            <link rel="stylesheet" href="src/style.css/arroz.css" type="text/css"/>
+        <title>Guia Morar sozinho</title>
+    </head>
+    
+    <body>
+        <header>
+            <nav id="navbar">
+                <i class="fa-solid fa-house" id="nav_logo"> Morar Sozinho</i>
+        
+                <ul id="nav_list">
+                    <li class="nav-item active">
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tutoriais">Tutoriais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+        
+                <button class="btn-default">
+                    Entrar
+                </button>
+        
+                <!-- Botão para menu mobile -->
+                <button id="mobile_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        
+            <!-- Menu mobile -->
+            <div id="mobile_menu">
+                <ul id="mobile_nav_list"> 
+                    <li class="nav-item">
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tutoriais">Tutoriais</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+        
+                <button class="btn-default">
+                    Entrar
+                </button>
+            </div> 
+        </header>
+        
+
+        
+                        </div>
+                        <section id="menu">
+                            <div class="dish">
+                                <img src="img/coxinha-fit.jpg" class="dish-image" width="40%" alt="Imagem do Arroz">
+                                <h3 class="dish-title">Coxinha fitness</h3>
+                                <span class="dish-description">Rápido fácil e bom para quem faz dieta.</span>
+                    
+                                <div class="dish-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(10+)</span>
+                                </div>
+                    
+                                <button class="btn-default" onclick="toggleRecipe()">
+                                    <i>Ver Mais</i>
+                                </button>
+                    
+                                <div id="recipe" style="display: none;">
+                                    <h4>Ingredientes:</h4>
+                                    <ul>
+                                        <li>4 batatas médias cozidas.</li>
+                                        <li>Aproximadamente 500g de frango desfiado.</li>
+                                        <li>Queijo mussarela ou requeijão para p recheio.</li>
+                                        <li>Flocaão ou cuscuz de milho para empanar.</li>
+
+                    
+                                    <h4>Modo de Preparo:</h4>
+                                    <ol>
+                                        <li>Pegue a batata inglesa cozida, amasse ela e misture com frango desfiado.</li>
+                                        <li>Pegue essa massa e recheie ela com requeijão ou queijo mussarela.</li>
+                                        <li>Feche a massa em formato de coxinha.</li>
+                                        <li>Pegue um recipiente e jogue flocão e empane sua coxinha.</li>
+                                        <li>Leve ao forno preaquecido a 200 graus por 15 minutos.</li>
+                                        <li>Após isso so aproveitar e se deliciar com essa coxinha saudável.</li>
+
+                                    </ol>
+                                </div>
+                            </div>
+                        </section>
+                    
+                        <script>
+                            function toggleRecipe() {
+                                const recipe = document.getElementById('recipe');
+                                if (recipe.style.display === "none") {
+                                    recipe.style.display = "block";
+                                } else {
+                                    recipe.style.display = "none";
+                                }
+                            }
+                        </script>
+                    </body>
+                    </html>

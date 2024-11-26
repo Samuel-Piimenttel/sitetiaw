@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Aplicando estilo global para todos os elementos:
+   - Define a fonte 'Poppins' como fonte padrão para todo o documento.
+   - Remove margens e paddings de todos os elementos.
+   - Utiliza o box-sizing border-box para incluir bordas e paddings dentro das dimensões do elemento. */
+   * {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define o fundo do corpo do documento como beige. */
+body {
+    background-color: #d4e0bc;
+}
+
+section {
+    padding: 20px 8%; 
+}
+
+
+/* Estilo para o botão com a classe 'btn-default':
+   - Remove a borda padrão do botão.
+   - Usa flexbox para alinhar o conteúdo do botão (texto ou ícone) de forma centralizada horizontal e verticalmente.
+   - Define a cor de fundo como amarelo (#ffcb45).
+   - Aplica um border-radius de 12px para arredondar os cantos.
+   - Define o padding interno do botão para 10px no eixo vertical e 14px no horizontal.
+   - Define a fonte em negrito (600) para o texto do botão.
+   - Aplica uma leve sombra (box-shadow) ao redor do botão, criando um efeito de profundidade.
+   - Altera o cursor para 'pointer' ao passar o mouse sobre o botão.
+   - Adiciona uma transição suave de 0.3s para mudanças na cor de fundo. */
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ade6ef;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo de hover para o botão 'btn-default':
+   - Muda a cor de fundo do botão para um tom mais escuro de amarelo (#e6b83d) quando o mouse passa por cima.
+   - Essa mudança acontece suavemente por causa da transição definida anteriormente. */
+.btn-default:hover {
+    background-color: #ade6ef; /* Alteração sutil no hover para diferenciar */
+}
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #ade6ef;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color:#64b8e6;
+    font-size: 4rem;
+}
+section.subtitle{
+    font-size: 2.1875rem
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="src/style.css/heder.css" />
+        <link href="src/style.css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="src/style.css/home.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <link rel="stylesheet" href="src/style.css/receita.css" type="text">
+            <link rel="stylesheet" href="src/style.css/arroz.css" type="text/css"/>
+        <title>Guia Morar sozinho</title>
+    </head>
+    
+    <body>
+        <header>
+            <nav id="navbar">
+                <i class="fa-solid fa-house" id="nav_logo"> Morar Sozinho</i>
+        
+                <ul id="nav_list">
+                    <li class="nav-item active">
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tutoriais">Tutoriais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+        
+                <button class="btn-default">
+                    Entrar
+                </button>
+        
+                <!-- Botão para menu mobile -->
+                <button id="mobile_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        
+            <!-- Menu mobile -->
+            <div id="mobile_menu">
+                <ul id="mobile_nav_list"> 
+                    <li class="nav-item">
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tutoriais">Tutoriais</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+        
+                <button class="btn-default">
+                    Entrar
+                </button>
+            </div> 
+        </header>
+        
+
+        
+                        </div>
+                        <section id="menu">
+                            <div class="dish">
+                                <img src="img/bife-remove.jpeg" class="dish-image" width="40%" alt="Imagem do Arroz">
+                                <h3 class="dish-title">Bife com fritas</h3>
+                                <span class="dish-description">Rapido e muito gostoso</span>
+                    
+                                <div class="dish-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(10+)</span>
+                                </div>
+                    
+                                <button class="btn-default" onclick="toggleRecipe()">
+                                    <i>Ver Mais</i>
+                                </button>
+                    
+                                <div id="recipe" style="display: none;">
+                                    <h4>Ingredientes:</h4>
+                                    <ul>
+                                        <li>2 bifes bovinos (o corte de sua preferencia, porém indicamos Acem).</li>
+                                        <li>Óleo</li>
+                                        <li>1/2 cebola fatiada.</li>
+                                        <li>2 dentes de alho.</li>
+                                        <li>Sal a gosto.</li>
+                                        <li>2 batatas medias.</li>
+                                    </ul>
+                    
+                                    <h4>Modo de Preparo:</h4>
+                                    <ol>
+                                        <li>Descasque e cozinhe as batatas.</li>
+                                        <li>Adicione um fio de óleo em uma frigideira ou panela baixa</li>
+                                        <li>Adicione o bife já temperado.</li>
+                                        <li>Quando um lado do bife dourar, vire-o e adicione o alho e a cebola e deixe dourar..</li>
+                                        <li>Corte as batatas no formato que preferir.</li>
+                                        <li>Em uma panela alta, adicione bastante óleo para fritar as batatas.</li>
+                                        <li>Assim que os 2 lados dos bifes estiverem dourados e fritos, reserve.</li>
+                                        <li>Assim que o óleo estiver quente, coloque as batatas para fritarem.</li>
+                                        <li>Quando as batatas dourarem e ficarem crocantes, retire-as do óleo.</li>
+                                        <li>Sirva-se.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </section>
+                    
+                        <script>
+                            function toggleRecipe() {
+                                const recipe = document.getElementById('recipe');
+                                if (recipe.style.display === "none") {
+                                    recipe.style.display = "block";
+                                } else {
+                                    recipe.style.display = "none";
+                                }
+                            }
+                        </script>
+                    </body>
+                    </html>

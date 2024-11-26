@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="src/style.css/heder.css" />
+        <link href="src/style.css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="src/style.css/home.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <link rel="stylesheet" href="src/style.css/receita.css" type="text">
+            <link rel="stylesheet" href="src/style.css/arroz.css" type="text/css"/>
+        <title>Guia Morar sozinho</title>
+    </head>
+    
+    <body>
+        <header>
+            <nav id="navbar">
+                <i class="fa-solid fa-house" id="nav_logo"> Morar Sozinho</i>
+        
+                <ul id="nav_list">
+                    <li class="nav-item active">
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tutoriais">Tutoriais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+        
+                <button class="btn-default">
+                    Entrar
+                </button>
+        
+                <!-- Botão para menu mobile -->
+                <button id="mobile_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        
+            <!-- Menu mobile -->
+            <div id="mobile_menu">
+                <ul id="mobile_nav_list"> 
+                    <li class="nav-item">
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tutoriais">Tutoriais</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+        
+                <button class="btn-default">
+                    Entrar
+                </button>
+            </div> 
+        </header>
+        
+
+        
+                        </div>
+                        <section id="menu">
+                            <div class="dish">
+                                <img src="img/pízza.jpg" class="dish-image" width="40%" alt="Imagem do Arroz">
+                                <h3 class="dish-title">Pizza caseira</h3>
+                                <span class="dish-description">Rápido fácil e bom para quem faz dieta.</span>
+                    
+                                <div class="dish-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(10+)</span>
+                                </div>
+                    
+                                <button class="btn-default" onclick="toggleRecipe()">
+                                    <i>Ver Mais</i>
+                                </button>
+                    
+                                <div id="recipe" style="display: none;">
+                                    <h4>Ingredientes:</h4>
+                                    <ul>
+                                        <li>300g de peito de frango.</li>
+                                        <li>2 ovos.</li>
+                                        <li>50g de queijo mozzarella.</li>
+                                        <li>20g de psylium.</li>
+                                        <li></li>180g de mussarela para forrar.</li>
+                                        <li>100g de tomate.</li>
+                                        <li>200g de molho de tomate.</li>
+                                        <li>5g de azeite.</li>
+                                        <li>Orégano a gosto.</li>
+                                    </ul>
+                    
+                                    <h4>Modo de Preparo:</h4>
+                                    <ol>
+                                        <li>Pegue um recipiente e misture 2 ovos , 300g de peito de frango e 50g de queijo ralado.</li>
+                                        <li>Pegue uma travessa para pizza e forre ela com inhaça moída ou psylium.</li>
+                                        <li>Coloque na massa a massa de tomate e o quejo mussarela.</li>
+                                        <li>Para finalizar coloque o tomate em cima da pizza e leve ao forno.</li>
+                                        <li>Deixe assa ate doura, mais ou menos 25 minutos.</li>
+                                        <li>Agora é só aproveitar essa pizza que tem poucas calorias comparadas com as convencionais.</li>
+
+                                    </ol>
+                                </div>
+                            </div>
+                        </section>
+                    
+                        <script>
+                            function toggleRecipe() {
+                                const recipe = document.getElementById('recipe');
+                                if (recipe.style.display === "none") {
+                                    recipe.style.display = "block";
+                                } else {
+                                    recipe.style.display = "none";
+                                }
+                            }
+                        </script>
+                    </body>
+                    </html>

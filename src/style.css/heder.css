@@ -1,0 +1,99 @@
+/* O header ocupará 100% da largura da tela e terá 20px de padding vertical 
+   e 8% de padding horizontal. */
+   header {
+    width: 100%;
+    padding: 20px 8%; 
+}
+
+/* O navbar ocupará 100% da largura, usará display flex para organizar os elementos 
+   e alinhará eles centralmente no eixo vertical e espaçados uniformemente no eixo horizontal. */
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Define o estilo do logo dentro do navbar, com tamanho de fonte e cor preta. */
+#nav_logo {
+    font-size: 20px;
+    color: black;
+}
+
+/* Estiliza a lista de navegação com display flex, sem marcadores de lista, 
+   e espaçamento de 48px entre os itens. */
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+/* Estilo dos links dos itens de navegação. Remove a decoração de texto, 
+   define uma cor semi-transparente (#1d1d1dad) e negrito para a fonte. */
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+}
+
+/* Estilo para o item de navegação ativo: muda a cor do texto para #1d1d1d 
+   e adiciona uma borda inferior amarela de 3px para destacar. */
+.nav-item.active a {
+    color: #1d1d1d;
+    border-bottom: 3px solid #ade6ef;
+}
+
+/* Inicialmente, o botão de menu mobile está oculto para telas maiores. */
+#mobile_btn {
+    display: none;
+}
+
+/* Inicialmente, o menu mobile também está oculto para telas maiores. */
+#mobile_menu {
+    display: none;
+}
+
+/* Quando a tela tem largura de 1170px ou menos, o nav_list e .btn-default são ocultos, 
+   para que o menu normal seja substituído pelo menu mobile. */
+@media screen and (max-width: 1170px) {
+
+    /* Esconde a lista de navegação e botões padrões do navbar em telas menores. */
+    #nav_list, 
+    #navbar .btn-default {
+        display: none;
+    }
+
+    /* Mostra o botão de menu mobile (três linhas ou ícone de menu). 
+       Estiliza com um fundo transparente, sem borda, e aumenta o tamanho da fonte. */
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Quando o menu mobile está ativo (ao clicar no botão), ele será exibido em flexbox, 
+       com os itens alinhados em coluna e centralizados. */
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Estiliza a lista do menu mobile, organizando os itens em coluna 
+       com espaçamento de 12px entre eles. */
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    /* Estiliza cada item da lista do menu mobile, removendo marcadores de lista 
+       e alinhando o texto no centro. */
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+}

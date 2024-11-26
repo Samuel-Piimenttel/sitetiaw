@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="src/style.css/heder.css" />
+        <link href="src/style.css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="src/style.css/home.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <link rel="stylesheet" href="src/style.css/receita.css" type="text">
+            <link rel="stylesheet" href="src/style.css/arroz.css" type="text/css"/>
+        <title>Guia Morar sozinho</title>
+    </head>
+    
+    <body>
+        <header>
+            <nav id="navbar">
+                <i class="fa-solid fa-house" id="nav_logo"> Morar Sozinho</i>
+        
+                <ul id="nav_list">
+                    <li class="nav-item active">
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tutoriais">Tutoriais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+        
+                <button class="btn-default">
+                    Entrar
+                </button>
+        
+                <!-- Botão para menu mobile -->
+                <button id="mobile_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        
+            <!-- Menu mobile -->
+            <div id="mobile_menu">
+                <ul id="mobile_nav_list"> 
+                    <li class="nav-item">
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tutoriais">Tutoriais</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+        
+                <button class="btn-default">
+                    Entrar
+                </button>
+            </div> 
+        </header>
+        
+
+        
+                        </div>
+                        <section id="menu">
+                            <div class="dish">
+                                <img src="img/coxinha-de-frango-com-requeijao-mini-congelada.jpg" class="dish-image" width="40%" alt="Imagem do Arroz">
+                                <h3 class="dish-title">Coxinha</h3>
+                                <span class="dish-description">A coxinha mais gostosa.</span>
+                    
+                                <div class="dish-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(10+)</span>
+                                </div>
+                    
+                                <button class="btn-default" onclick="toggleRecipe()">
+                                    <i>Ver Mais</i>
+                                </button>
+                    
+                                <div id="recipe" style="display: none;">
+                                    <h4>Ingredientes:</h4>
+                                    <ul>
+                                        <li>3 xícaras de farinha de trigo (420 gramas)</li>
+                                        <li>3 xícaras de leite (720 mililitros)</li>
+                                        <li>2 colheres de sopa de manteiga</li>
+                                        <li>1 tablete de caldo de galinha</li>
+                                        <li>1 colher de chá de sal</li>
+                                        <li>500 gramas de peito de frango cozido e desfiado</li>
+                                        <li>2 tomates maduros picados</li>
+                                        <li>1 cebola picada</li>
+                                        <li>3 colheres de sopa de cheiro verde picado</li>
+                                        <li>4 colheres de sopa de requeijão cremoso</li>
+                                        <li> 1 colher de sopa de azeite de oliva</li>
+                                        <li>pimenta do reino</li>
+                                        <li>sal</li>
+                                        <li>½ xícara de leite (120 mililitros)</li>
+                                        <li>1 xícara de farinha de rosca</li>
+                                        <li>óleo para fritar</li>
+
+                                    </ul>
+                    
+                                    <h4>Modo de Preparo:</h4>
+                                    <ol>
+                                        <li>Comece preparando a massa de coxinha simples: primeiramente leve ao fogo uma panela com o leite, a manteiga e o tablete de caldo.</li>
+                                        <li>Quando começar a ferver, baixe o fogo e coloque o sal e a farinha de trigo de só uma vez. Mexa imediatamente com uma colher de pau, misturando e amassando bem até que a massa de coxinha comece a desgrudar do fundo da panela, como na foto.</li>
+                                        <li>Transfira a massa de coxinha para a bancada limpa e polvilhada com farinha e reserve até amornar. Depois amasse e sove a massa de coxinha simples com as suas mãos até que fique lisa e homogênea. A receita de massa de coxinha está pronta! Vamos preparar o recheio de frango e requeijão.</li>
+                                        <li>Leve ao fogo baixo uma panela com o azeite, a cebola picada e os tomates. Tempere com sal e pimenta a gosto e deixe cozinhar, mexendo de vez em quando, por 5 minutos ou até estes ingredientes ficarem macios.</li>
+                                        <li>Depois acrescente o frango cozido e desfiado e o cheiro verde. Misture e deixe cozinhar por mais 1-2 minutos, para o frango pegar o gosto desses temperos. Desligue o fogo e deixe esfriar um pouco antes de misturar o requeijão cremoso neste recheio para coxinha simples.</li>
+                                        <li>Pegue um pedaço da massa de coxinha e abra em forma de disco na sua mão. Coloque uma porção do recheio de frango e feche a massa modelando no formato da coxinha tradicional. Repita com a restante massa e recheio.</li>
+                                        <li>Envolva as coxinhas no leite e, em seguida, passe na farinha de rosca. Esquente o óleo numa panela no fogo médio e, quando estiver quente, coloque 3-4 coxinhas fritando até que estejam douradas de todos os lados.</li>
+                                        <li>Retire as coxinhas fritas para um prato com papel absorvente e reserve. Continue fritando as coxinhas restantes, apenas 3-4 de cada vez, para evitar que grudem umas nas outras e para não ficarem gordurosas.</li>
+                                        <li>Depois de fritar todas as coxinhas, pode se deliciar com este maravilhoso quitute brasileiro! Não hesite em preparar esta receita de coxinha fácil e deliciosa e dizer nos comentários o que você achou. Bom apetite!</li>
+                                        
+                                    </ol>
+                                </div>
+                            </div>
+                        </section>
+                    
+                        <script>
+                            function toggleRecipe() {
+                                const recipe = document.getElementById('recipe');
+                                if (recipe.style.display === "none") {
+                                    recipe.style.display = "block";
+                                } else {
+                                    recipe.style.display = "none";
+                                }
+                            }
+                        </script>
+                    </body>
+                    </html>
