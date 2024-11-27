@@ -1,0 +1,23 @@
+.aside{
+    display: flex;
+   
+    justify-content: end;
+}
+
+section{
+    display: flex;
+    background-color: white;
+    margin-top: 80px;
+    width: 350px;
+    align-items: center;
+    height: 500px;
+    display: flex;
+}
+
+
+section img{
+    width: 350px;
+    height: 450px;
+    padding-right: 200px;
+    
+}
